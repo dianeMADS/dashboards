@@ -17,12 +17,12 @@ The previous network is represented below, but from a geographic perspective. Th
 ![geographical](/assets/geo-map.png)
 
 ### Congestion Table
-Another key tab
+Another key functionality for this tool is monthly/weekly congestion table. For each circuit ID, it indicates end-routers and interfaces, bandwidth for the logical link, current traffic aggregation (from various statistical perspectives), and predictions from 3 months up to 5 years based on compound 95th percentile and estimated yearly growth. Color codes are used to differentiate between aggregation techniques, but also to highlight links that are already over 80% and also 100% utlization. Filters are added to focus on links from certain regions or links over 70% utlization, but also to modify growth rate if needed. Previous month/week reports are still available in the scroldown menu, although the default is the most recent one.
 
 ![congestion](/assets/congestion.png)
 
 ### Failover Table
-...
+This dashboard is similar to the previous one under the difference that links are bundled in pair of primary and secondary like 
 
 ![failover](/assets/failover.png)
 
