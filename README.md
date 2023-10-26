@@ -1,4 +1,5 @@
-(Explain data pipeline from InfoVista to DL to Snowflake through Alteryx to Tableau...)
+This webpage presents some traffic analysis dashboards developed by Diane for various audiences including leadership, engineering and operations of an ISP. Initial data sources are Network Management System (NMS) collecting 5-min traffic traces from network routers and dumping them into an AWS datalake. I then built Alteryx work flow processes for daily, weekly and monthly aggregations that populate a pre-designed SnowFlake master table. BI tools such as Tableau then consume data from the SnowFlake table.
+##### Data Tools: (NMS) API, SQL and key-value NoSQL, AWS cloud computing, Alteryx, SnowFlake, Tableau
 
 # Ex 1. Realtime Traffic Map
 This is a high-level view map developed for executive audience. It is a realtime traffic map showing the company hubsite cities, circuit IDs in between along with bandwidth and total utilization per segment, and link state. It is possible to select previous date/time and retrieve network information at the chosen time.
