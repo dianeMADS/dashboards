@@ -1,12 +1,14 @@
+(Explain data pipeline from InfoVista to DL to Snowflake through Alteryx to Tableau...)
+
 # Ex 1. Realtime Traffic Map
 This is a high-level view map developed for executive audience. It is a realtime traffic map showing the company hubsite cities, circuit IDs in between along with bandwidth and total utilization per segment, and link state. It is possible to select previous date/time and retrieve network information at the chosen time.
 ![highlevel](/assets/high-level-ipcore.png)
 
 # Ex 2. Congestion and Failover Reports
-Here are several screenshots from an interactive tool developped for network engineers, with the objective of facilitating traffic growth monitoring and capacity planning activities. The menu on top of each page indicates the different dashboards.
+Here are several screenshots from an interactive tool I developped for network engineers, with the objective of facilitating traffic growth monitoring and capacity planning activities. The menu on top of each page indicates the different dashboards.
 
 ### Network Logical View
-First, we show a logical view of the ISP network topology, with routers at hibsites and logical links in between. A color-code is used to differentiate ISP ownership of fibers and leased, as well as links avaiability in the event of failure (e.g. fiber cut). This is not shown for privacy constraints, but upon hovering over a link it provides such realtime information as end routers and interfaces, bandwidth and traffic on the link in question. Clicking on the link opens another window showing historical trend for the given link. \[Note that router names have been blured for privacy purposes.\]
+First, we show a logical view of the ISP network topology, with routers at hubsites and logical links in between. A color-code is used to differentiate ISP ownership of fibers and leased, as well as links availability in the event of failure (e.g. fiber cut). This is not shown for privacy constraints, but upon hovering over a link it provides such realtime information as end routers and interfaces, bandwidth and traffic on the link in question. Clicking on the link opens another window showing historical trend for the given link. \[Note that router names have been blured for privacy purposes.\]
 ![logical](/assets/logical-map.png)
 
 ### Network Geographical View
@@ -29,6 +31,5 @@ Here is another example for the same circuit ID, but this time showing historica
 ![trendY](/assets/trend-id-year.png)
 
 # Ex 3. Devices & Ports Tracking
-...
-
+I built this type of dashboards to support some operations teams. At every moment it retrieves the number of devices at every hubsite and counts (total vs unused) ports of each type on every device. A port availability report can help to better anticipate shortage of ports and plan for new purchases and power/space requirements, which might be challenging in some hubsites. This report also covers software versions and device models, which is valuable information durig migration and code upgrades. 
 ![operations](/assets/device-ports.png)
