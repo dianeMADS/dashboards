@@ -1,11 +1,11 @@
 This webpage presents some traffic analysis dashboards developed by Diane for various audiences including leadership, engineering and operations of an ISP. Initial data sources are Network Management System (NMS) collecting 5-min traffic traces from network routers and dumping them into an AWS datalake. I then built Alteryx work flow processes for daily, weekly and monthly aggregations that populate a pre-designed SnowFlake master table. BI tools such as Tableau then consume data from the SnowFlake table.
 ##### Toolkit: (NMS) API, Python, SQL and key-value NoSQL, AWS cloud computing, Alteryx, SnowFlake, Tableau
 
-# Ex 1. Realtime Traffic Map
+## Ex 1. Realtime Traffic Map
 This is a high-level view map developed for executive audience. It is a realtime traffic map showing the company hubsite cities, circuit IDs in between along with bandwidth and total utilization per segment, and link state. It is possible to select previous date/time and retrieve network information at the chosen time.
 ![highlevel](/assets/high-level-ipcore.png)
 
-# Ex 2. Congestion and Failover Reports
+## Ex 2. Congestion and Failover Reports
 Here are several screenshots from an interactive tool I developped for network engineers, with the objective of facilitating traffic growth monitoring and capacity planning activities. The menu on top of each page indicates the different dashboards.
 
 ### Network Logical View
@@ -31,6 +31,6 @@ It was mentioned earlier that it is possible to mouse-click on a link, either on
 Here is another example for the same circuit ID, but this time showing historical trend for the previous year (however, limited to data available... The link under examination was turned up in June only.)
 ![trendY](/assets/trend-id-year.png)
 
-# Ex 3. Devices & Ports Tracking
+## Ex 3. Devices & Ports Tracking
 I built this type of dashboards to support some operations teams. At every moment it retrieves the number of devices at every hubsite and counts (total vs unused) ports of each type on every device. A port availability report can help to better anticipate shortage of ports and plan for new purchases and power/space requirements, which might be challenging in some hubsites. This report also covers software versions and device models, which is valuable information durig migration and code upgrades. (Hubsites and real counts are not disclosed for privacy purposes.)
 ![operations](/assets/device-ports.png)
