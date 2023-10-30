@@ -3,7 +3,7 @@ This webpage presents some traffic analysis dashboards developed by Diane for va
 
 ## Ex 1. Realtime Traffic Map
 This is a high-level view map developed for executive audience. It is a realtime traffic map showing the company hubsite cities, circuit IDs in between along with bandwidth and total utilization per segment, and link state. It is possible to select previous date/time and retrieve network information at the chosen time. [Note cities and traffic numbers are hidden for privacy purposes.]
-![highlevel](/assets/high-level-ipcore.png)
+![highlevel](/assets/high-level-mpls.png)
 
 ## Ex 2. Congestion and Failover Reports
 Here are several screenshots from an interactive tool I developped for network engineers, with the objective of facilitating traffic growth monitoring and capacity planning activities. The menu on top of each page indicates the different dashboards.
