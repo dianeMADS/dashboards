@@ -1,12 +1,23 @@
-This webpage presents some traffic analysis dashboards developed by Diane for various audiences including leadership, engineering and operations of an ISP. Initial data sources are Network Management System (NMS) collecting 5-min traffic traces from network routers and dumping them into an AWS datalake. I then built Alteryx work flow processes for daily, weekly and monthly aggregations that populate a pre-designed SnowFlake master table. BI tools such as Tableau then consume data from the SnowFlake table.
+The following dashboards are part of a family of nore network reports aimed at providing insights on traffic volumes and subsequent resource requirements. The context is a service provider network with millions of users and a mix of all types of internet traffic. The network has hundreds of links with varied capacities, from multiple 10Gs for smaller hubsites to tens of 100Gs for backbone links. Link costs are also varied as some are on the service provider’s own fiber infrastructure while others are leases from other providers. Initial data sources are Network Management Systems (NMS) collecting 5-min traffic measurements from network routers and dumping them into a datalake. An ETL workflow is scheduled to differentiate and aggregate traffic traces on a daily, weekly, and monthly basis. Those are the data feeding the BI tool for use in dashboards.
 ##### Toolkit: (NMS) API, Python, SQL and key-value NoSQL, AWS cloud computing, Alteryx, SnowFlake, Tableau
 
 ## Ex 1. Realtime Traffic Map
-This is a high-level view map developed for executive audience. It is a realtime traffic map showing the company hubsite cities, circuit IDs in between along with bandwidth and total utilization per segment, and link state. It is possible to select previous date/time and retrieve network information at the chosen time. [Note cities and traffic numbers are hidden for privacy purposes.]
+One visualization is to give leadership a high-level view of the network topology and bandwidth utilization. It is a realtime traffic map showing:
+- cities, i.e. network nodes
+- links with color coding differentiating between owned and leased fibers, and up/down status
+- traffic over installed capacity, both in bits per sec
+It is possible to select previous date/time and retrieve network information at the chosen time. Knowing network state at specific times, especially under critical conditions, facilitates discussions on growth requirements and network expansions. 
+[Note cities and traffic/bandwith numbers are hidden for privacy purposes.]
 ![highlevel](/assets/high-level-mpls.png)
+
+Main Tools: SQL, AWS (Athena & S3), Alteryx, SnowFlake, Tableau
 
 ## Ex 2. Congestion and Failover Reports
 Here are several screenshots from an interactive tool I developped for network engineers, with the objective of facilitating traffic growth monitoring and capacity planning activities. The menu on top of each page indicates the different dashboards.
+
+
+Other dashboards comprise congestion and failover tables, historical trends, and resource availability reports, equipping network engineers with tools assisting in decision-making for network resource planning.
+
 
 ### Network Logical View
 First, we show a logical view of the ISP network topology, with routers at hubsites and logical links in between. A color-code is used to differentiate ISP ownership of fibers and leased, as well as links availability in the event of failure (e.g. fiber cut). This is not shown for privacy constraints, but upon hovering over a link it provides such realtime information as end routers and interfaces, bandwidth and traffic on the link in question. Clicking on the link opens another window showing historical trend for the given link. \[Note that router names have been blured for privacy purposes.\]
