@@ -10,16 +10,8 @@ One visualization is to give leadership a high-level view of the network topolog
 It is possible to select previous date/time and retrieve network information at the chosen time. Knowing network state at specific times, especially under critical conditions, facilitates discussions on growth requirements and network expansions. 
 
 [Note cities and traffic/bandwith numbers are hidden for privacy purposes.]
-![highlevel](/assets/high-level-mpls.png)
-
-Main Tools: SQL, AWS (Athena & S3), Alteryx, SnowFlake, Tableau
-
-## Ex 2. Congestion and Failover Reports
-Here are several screenshots from an interactive tool I developped for network engineers, with the objective of facilitating traffic growth monitoring and capacity planning activities. The menu on top of each page indicates the different dashboards.
-
-
-Other dashboards comprise congestion and failover tables, historical trends, and resource availability reports, equipping network engineers with tools assisting in decision-making for network resource planning.
-
+<-- ![highlevel](/assets/high-level-mpls.png)
+-->
 
 ### Network Logical View
 First, we show a logical view of the ISP network topology, with routers at hubsites and logical links in between. A color-code is used to differentiate ISP ownership of fibers and leased, as well as links availability in the event of failure (e.g. fiber cut). This is not shown for privacy constraints, but upon hovering over a link it provides such realtime information as end routers and interfaces, bandwidth and traffic on the link in question. Clicking on the link opens another window showing historical trend for the given link. \[Note that router names have been blured for privacy purposes.\]
@@ -28,6 +20,19 @@ First, we show a logical view of the ISP network topology, with routers at hubsi
 ### Network Geographical View
 The previous network is represented below, but from a geographic perspective. This allows network engineers to quickly identify circuits that are sharing fiber and where they do so. Other functionalities are the same as for the logical view, and again router names are blured for privacy purposes. 
 ![geographical](/assets/geo-map.png)
+
+
+Main Tools: SQL, AWS (Athena & S3), Alteryx, SnowFlake, Tableau
+
+## Ex 2. Congestion and Failover Reports
+Other dashboards comprise congestion and failover tables, historical trends, and resource availability reports, equipping network engineers with tools assisting in decision-making for network resource planning.
+
+
+Here are several screenshots from an interactive tool I developped for network engineers, with the objective of facilitating traffic growth monitoring and capacity planning activities. The menu on top of each page indicates the different dashboards.
+
+
+
+
 
 ### Congestion Table
 Another key functionality for this tool is monthly/weekly congestion table. For each circuit ID, it indicates end-routers and interfaces, bandwidth for the logical link, current traffic aggregation (from various statistical perspectives), and predictions from 3 months up to 5 years based on compound 95th percentile and estimated yearly growth. Color codes are used to differentiate between aggregation techniques, but also to highlight links that are already over 80% and also 100% utlization. Filters are added to focus on links from certain regions or links over 70% utlization, but also to modify growth rate if needed. Previous month/week reports are still available in the scroldown menu, although the default is the most recent one. It is possible to select a link and jump into a window showing historical traffic trend for the given link. (Transmission systems and router names are not displayed for privacy purposes.)
