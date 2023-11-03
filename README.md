@@ -10,7 +10,7 @@ One visualization is to give leadership a high-level view of the network topolog
 It is possible to select previous date/time and retrieve network information at the chosen time. Knowing network state at specific times, especially under critical conditions, facilitates discussions on growth requirements and network expansions. 
 
 [Note cities and traffic/bandwith numbers are hidden for privacy purposes.]
-<-- ![highlevel](/assets/high-level-mpls.png)
+<!-- ![highlevel](/assets/high-level-mpls.png)
 -->
 
 ### Network Logical View
