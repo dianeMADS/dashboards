@@ -61,3 +61,7 @@ Here is another example for the same link, but this time historical trend covers
 This final example is to retrieve the number of devices at every hubsite; one also counts services and ports (total vs. unused) on devices. Such a port availability report can help to better anticipate shortage of ports and plan for new purchases and power/space requirements, which might be challenging in some hubsites. This report also covers software versions and device models, which are valuable information during migration and code upgrades. [Hubsites and real counts are not disclosed here for privacy purposes.]
 
 ![operations](/assets/device-ports.png)
+
+
+# Getting In Touch
+Would you like to chat about the portfolio, work opportunities or collaboration, reach out at diane.onguetou@gmail.com
