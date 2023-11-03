@@ -6,7 +6,9 @@ One visualization is to give leadership a high-level view of the network topolog
 - cities, i.e. network nodes
 - links with color coding differentiating between owned and leased fibers, and up/down status
 - traffic over installed capacity, both in bits per sec
+
 It is possible to select previous date/time and retrieve network information at the chosen time. Knowing network state at specific times, especially under critical conditions, facilitates discussions on growth requirements and network expansions. 
+
 [Note cities and traffic/bandwith numbers are hidden for privacy purposes.]
 ![highlevel](/assets/high-level-mpls.png)
 
