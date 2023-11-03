@@ -2,7 +2,7 @@ The following dashboards are part of a family of core network reports aimed at p
 ##### Toolkit: (NMS) API, Python, SQL and key-value NoSQL, AWS cloud computing, Alteryx, SnowFlake, Tableau
 
 # Ex 1. Realtime Traffic Map
-Some visualizations are simply traffic maps, which give leadership a high-level view of the network topology and bandwidth utilization. This dashboard comprises: 
+Some visualizations are simply traffic maps, which give leadership a high-level view of the network topology and bandwidth utilization. This dashboard type comprises: 
 - cities (i.e. network nodes),
 - links with color coding differentiating between owned and leased fibers and failure events,
 - and traffic over installed capacity in bits per sec.
